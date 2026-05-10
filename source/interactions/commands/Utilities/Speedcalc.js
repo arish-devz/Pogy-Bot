@@ -1,13 +1,14 @@
 const { createGeneratedUtilityCommand } = require("./_generatedFactory");
 
 module.exports = createGeneratedUtilityCommand({
-  mode: "number_pair",
+  mode: "ratio",
   name: "speedcalc",
   aliases: ["speedcalc"],
-  title: "Speed",
-  description: "Speed utility.",
+  title: "Speed Calc",
+  description: "Calculate average speed from distance and time.",
   usage: ["speedcalc <left> <right>"],
-  examples: ["speedcalc 10 20"],
+  examples: ["speedcalc 100 50"],
   group: "math",
-  compute: (left, right) => right === 0 ? NaN : left / right
+  suffix: " units/hr",
+  compute: (left, right) => left / right
 });

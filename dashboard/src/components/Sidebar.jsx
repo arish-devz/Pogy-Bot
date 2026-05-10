@@ -112,7 +112,19 @@ export default function Sidebar({ user, selectedGuild, onSelectGuild, activePage
           <span className="logout-btn" onClick={handleLogout}>Log out</span>
         </div>
       </div>
+
+      <div style={{
+        padding: '10px 16px 14px',
+        borderTop: '1px solid rgba(255,255,255,0.06)',
+        marginTop: '8px',
+        textAlign: 'center'
+      }}>
+        <p style={{ margin: 0, fontSize: '0.65rem', color: 'rgba(219,222,225,0.35)', lineHeight: 1.6, letterSpacing: '0.02em' }}>
+          created by <strong style={{ color: 'rgba(219,222,225,0.55)' }}>devrock07</strong>
+          <br />
+          updated by <strong style={{ color: 'rgba(219,222,225,0.55)' }}>void</strong>
+        </p>
+      </div>
     </nav>
   );
 }
-

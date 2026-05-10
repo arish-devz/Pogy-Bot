@@ -1,15 +1,14 @@
 const { createGeneratedUtilityCommand } = require("./_generatedFactory");
 
 module.exports = createGeneratedUtilityCommand({
-  mode: "unit_convert",
+  mode: "convert",
   name: "sqmtoacre",
   aliases: ["sqmtoacre"],
-  title: "Square Meters To Acres",
+  title: "Sq M to Acre",
   description: "Convert square meters to acres.",
   usage: ["sqmtoacre <value>"],
-  examples: ["sqmtoacre 10"],
-  group: "conversion",
-  fromLabel: "Square Meters",
-  toLabel: "Acres",
-  factor: 0.0002471053814671653
+  examples: ["sqmtoacre 100"],
+  group: "area",
+  suffix: " acres",
+  compute: (v) => v / 4046.856422
 });

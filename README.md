@@ -2,10 +2,13 @@
 
 Pogy Bot is a full Discord bot platform with a live web dashboard, moderation tools, anti-nuke protection, automod controls, music playback, command management, and guild configuration flows.
 
-## Owner
+## founded by 
 
 - GitHub: [devrock07](https://github.com/devrock07)
 
+## updated by 
+
+- GitHub: [Void](https://github.com/srivastavatanmay521-alt)
 ## Highlights
 
 - Discord bot with moderation, utility, music, fun, and management systems
@@ -328,3 +331,7 @@ If a token, client secret, database URI, or webhook was ever exposed before clea
 ## License
 
 This project is distributed under the license in [LICENSE](LICENSE).
+
+---
+
+> **created by devrock07 · updated by void**

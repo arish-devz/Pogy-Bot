@@ -1,15 +1,14 @@
 const { createGeneratedUtilityCommand } = require("./_generatedFactory");
 
 module.exports = createGeneratedUtilityCommand({
-  mode: "unit_convert",
+  mode: "convert",
   name: "hectaretosqm",
   aliases: ["hectaretosqm"],
-  title: "Hectares To Square Meters",
+  title: "Hectare to Sq M",
   description: "Convert hectares to square meters.",
   usage: ["hectaretosqm <value>"],
-  examples: ["hectaretosqm 10"],
-  group: "conversion",
-  fromLabel: "Hectares",
-  toLabel: "Square Meters",
-  factor: 10000
+  examples: ["hectaretosqm 100"],
+  group: "area",
+  suffix: " m²",
+  compute: (v) => v * 10000
 });

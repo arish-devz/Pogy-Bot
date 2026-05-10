@@ -1,15 +1,14 @@
 const { createGeneratedUtilityCommand } = require("./_generatedFactory");
 
 module.exports = createGeneratedUtilityCommand({
-  mode: "unit_convert",
+  mode: "convert",
   name: "gbtomb",
   aliases: ["gbtomb"],
-  title: "Gigabytes To Megabytes",
+  title: "GB to MB",
   description: "Convert gigabytes to megabytes.",
   usage: ["gbtomb <value>"],
-  examples: ["gbtomb 10"],
-  group: "conversion",
-  fromLabel: "Gigabytes",
-  toLabel: "Megabytes",
-  factor: 1024
+  examples: ["gbtomb 100"],
+  group: "data",
+  suffix: " MB",
+  compute: (v) => v * 1024
 });

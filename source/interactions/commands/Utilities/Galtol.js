@@ -1,15 +1,14 @@
 const { createGeneratedUtilityCommand } = require("./_generatedFactory");
 
 module.exports = createGeneratedUtilityCommand({
-  mode: "unit_convert",
-  name: "galtol",
-  aliases: ["galtol"],
-  title: "Gallons To Liters",
-  description: "Convert gallons to liters.",
-  usage: ["galtol <value>"],
-  examples: ["galtol 10"],
-  group: "conversion",
-  fromLabel: "Gallons",
-  toLabel: "Liters",
-  factor: 3.785411784
+  mode: "convert",
+  name: "galtolitre",
+  aliases: ["galtolitre"],
+  title: "Gal to L",
+  description: "Convert US gallons to liters.",
+  usage: ["galtolitre <value>"],
+  examples: ["galtolitre 100"],
+  group: "volume",
+  suffix: " L",
+  compute: (v) => v * 3.785411784
 });

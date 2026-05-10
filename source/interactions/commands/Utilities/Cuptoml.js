@@ -1,15 +1,14 @@
 const { createGeneratedUtilityCommand } = require("./_generatedFactory");
 
 module.exports = createGeneratedUtilityCommand({
-  mode: "unit_convert",
+  mode: "convert",
   name: "cuptoml",
   aliases: ["cuptoml"],
-  title: "Cups To Milliliters",
+  title: "Cup to mL",
   description: "Convert cups to milliliters.",
   usage: ["cuptoml <value>"],
-  examples: ["cuptoml 10"],
-  group: "conversion",
-  fromLabel: "Cups",
-  toLabel: "Milliliters",
-  factor: 236.5882365
+  examples: ["cuptoml 100"],
+  group: "volume",
+  suffix: " mL",
+  compute: (v) => v * 236.588
 });

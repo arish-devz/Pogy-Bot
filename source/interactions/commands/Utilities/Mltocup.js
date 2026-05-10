@@ -1,15 +1,14 @@
 const { createGeneratedUtilityCommand } = require("./_generatedFactory");
 
 module.exports = createGeneratedUtilityCommand({
-  mode: "unit_convert",
+  mode: "convert",
   name: "mltocup",
   aliases: ["mltocup"],
-  title: "Milliliters To Cups",
+  title: "mL to Cup",
   description: "Convert milliliters to cups.",
   usage: ["mltocup <value>"],
-  examples: ["mltocup 10"],
-  group: "conversion",
-  fromLabel: "Milliliters",
-  toLabel: "Cups",
-  factor: 0.004226752837730375
+  examples: ["mltocup 100"],
+  group: "volume",
+  suffix: " cups",
+  compute: (v) => v / 236.588
 });
